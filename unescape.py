@@ -3,7 +3,7 @@ import sublime_plugin
 import ast
 
 
-class RegexEscapeCommand(sublime_plugin.TextCommand):
+class RegexUnescapeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         sels = self.view.sel()
         for sel in sels:
